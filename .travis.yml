@@ -1,0 +1,18 @@
+os:
+  - linux
+services:
+  - docker
+language: node_js
+node_js:
+  - "6.9.5"
+jdk:
+  - oraclejdk8
+install:
+  - docker version
+  - docker-compose version
+script:
+  - echo $HOME
+  - ls -al $HOME
+  - echo $TRAVIS_BUILD_DIR
+  - ls -al $TRAVIS_BUILD_DIR
+
